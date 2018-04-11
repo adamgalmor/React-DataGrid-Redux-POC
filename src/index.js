@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import GridPage from "./components/grid/GridPage";
+import App from "./components/App";
 import registerServiceWorker from './registerServiceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(<GridPage />, document.getElementById('root'));
+ReactDOM.render((
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+    ), document.getElementById('root')
+);
 registerServiceWorker();

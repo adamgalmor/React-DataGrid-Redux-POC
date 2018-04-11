@@ -1,12 +1,12 @@
 // var update = require('react-addons-update'); //ES5
 import update from 'react-addons-update'; //ES6
-import * as t from '../../common/temporaryHackForReactDataGrid';
+import * as t from '../common/temporaryHackForReactDataGrid';
 
 const React = require('react');
 const ReactDataGrid = require('react-data-grid');
 const { Toolbar, Data: { Selectors } } = require('react-data-grid-addons');
 
-class GridPage extends React.Component {
+class Grid extends React.Component {
     constructor(props, context) {
         super(props, context);
         this._columns = [
@@ -126,4 +126,4 @@ class GridPage extends React.Component {
     }
 }
 
-export default GridPage
+export default Grid
